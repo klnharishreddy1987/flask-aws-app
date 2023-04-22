@@ -78,16 +78,25 @@
             <h3 class="csi-border-bottom csi-border-light-grey csi-padding-16">Contact</h3>
             <p id="emailFormMsg"></p>
             <p>Lets get in touch and talk about your business needs.</p>
-            <form id="email_form">
+            <form action="/upload" method="post" enctype="multipart/form-data">
                 <input class="csi-input csi-border" type="text" id="name" placeholder="Name" name="name">
                 <input class="csi-input csi-section csi-border" id="email" type="text" placeholder="Email" name="email">
                 <input class="csi-input csi-section csi-border" id="subject" type="text" placeholder="Subject"
                     name="subject">
                 <input class="csi-input csi-section csi-border" id="comment" type="text" placeholder="Comment"
                     name="comment">
+                    <button class="csi-button csi-black csi-section submit-btn" >
+                        <i class="fa fa-paper-plane"></i> SEND 
+                    </button>
+            <h3 class="csi-border-bottom csi-border-light-grey csi-padding-16">Customize</h3>
+
+                    Want to customize your card? Sure thing. Upload a picture and you are done.
+                <input class="csi-input csi-section csi-border" id="comment" type="file" placeholder="Upload your Image"
+                name="file">
                 <button class="csi-button csi-black csi-section submit-btn" type="submit">
-                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    <i class="fa fa-paper-plane"></i> Upload 
                 </button>
+                <h3>{{msg}}</h3>
             </form>
         </div>
 
