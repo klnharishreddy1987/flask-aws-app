@@ -50,7 +50,7 @@ $(function () {
         let cardDiv =`<div class="csi-col l3 m6 csi-margin-bottom card-item pointer-cursor items">
                 <div class="csi-display-container">
                     <div class="csi-bar-item csi-button">${cardsList[i]["CardType"]}</div>
-                    <img class="card-image" src="http://flaskapp-env.eba-759pps6q.us-east-1.elasticbeanstalk.com/get-image/${cardsList[i]["CardImage"]}" style="width:99%" />
+                    <img class="card-image" src="http://flaskawsapp-env-1.eba-xnu9vcjz.us-east-1.elasticbeanstalk.com/get-image/${cardsList[i]["CardImage"]}" style="width:99%" />
                     <a class="card-middle" href="#cardModal_${i}" rel="modal:open">
                         <div class="card-text">${cardsList[i]["CardName"]}</div>
                     </a>
