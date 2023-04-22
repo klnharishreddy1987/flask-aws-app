@@ -68,7 +68,7 @@ $(function () {
         let cardDiv =`<div class="csi-col l3 m6 csi-margin-bottom card-item pointer-cursor items">
                 <div class="csi-display-container">
                     <div class="csi-bar-item csi-button">${cardsList[i]["CardType"]}</div>
-                    <img class="card-image" src="http://flaskawsapp-env-1.eba-xnu9vcjz.us-east-1.elasticbeanstalk.com/get-image/${cardsList[i]["CardImage"]}" style="width:99%" />
+                    <img class="card-image" src="http://flaskebsapp-env.eba-kf98uhic.us-east-1.elasticbeanstalk.com/get-image/${cardsList[i]["CardImage"]}" style="width:99%" />
                     <a class="card-middle" href="#cardModal_${i}" rel="modal:open">
                         <div class="card-text">${cardsList[i]["CardName"]}</div>
                     </a>
@@ -121,7 +121,7 @@ $(function () {
     // Create child DIVs inside parent DIV.
     console.log(author, index);
     const authorDiv =`<div class="csi-col l3 m6 csi-margin-bottom">
-        <img src="http://flaskawsapp-env-1.eba-xnu9vcjz.us-east-1.elasticbeanstalk.com/get-image/${author.image}" alt="John" style="width:100%">
+        <img src="http://flaskebsapp-env.eba-kf98uhic.us-east-1.elasticbeanstalk.com/get-image/${author.image}" alt="John" style="width:100%">
         <h3>${author.firstName} ${author.lastName}</h3>
         <p class="csi-opacity">${author.designation}</p>
         <p>${author.about}</p>
