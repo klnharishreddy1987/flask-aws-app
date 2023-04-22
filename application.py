@@ -39,7 +39,7 @@ def upload():
                 )
                 msg = "Upload Done ! "
 
-    return render_template("file_upload_to_s3.html",msg =msg)
+    return render_template("index.html",msg =msg)
 
 if __name__ == "__main__":
     application.static_folder = "static"
