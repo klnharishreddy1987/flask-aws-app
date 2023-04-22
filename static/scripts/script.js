@@ -38,10 +38,28 @@ $(function () {
 
     let cardsList = [
         {
-        "CardName" :"HSBC Basic Card",
-        "CardType" : "CreditCard",
-        "CardImage" : "creditcard1.jpg",
-        "CardDesc" : "Zero Joining Fees, 1.5% cashback on all online spend (excluding transfer of funds to online wallets) and 1% on all other spends. (cashback will be credited back within 45 days of the card statement date)."
+            "CardName" :"HSBC Basic Card",
+            "CardType" : "CreditCard",
+            "CardImage" : "creditcard1.jpg",
+            "CardDesc" : "Zero Joining Fees, 1.5% cashback on all online spend (excluding transfer of funds to online wallets) and 1% on all other spends. (cashback will be credited back within 45 days of the card statement date)."
+        },
+        {
+            "CardName" :"HSBC Basic Card",
+            "CardType" : "CreditCard",
+            "CardImage" : "creditcard1.jpg",
+            "CardDesc" : "Zero Joining Fees, 1.5% cashback on all online spend (excluding transfer of funds to online wallets) and 1% on all other spends. (cashback will be credited back within 45 days of the card statement date)."
+        },
+        {
+            "CardName" :"HSBC Basic Card",
+            "CardType" : "CreditCard",
+            "CardImage" : "creditcard1.jpg",
+            "CardDesc" : "Zero Joining Fees, 1.5% cashback on all online spend (excluding transfer of funds to online wallets) and 1% on all other spends. (cashback will be credited back within 45 days of the card statement date)."
+        },
+        {
+            "CardName" :"HSBC Basic Card",
+            "CardType" : "CreditCard",
+            "CardImage" : "creditcard1.jpg",
+            "CardDesc" : "Zero Joining Fees, 1.5% cashback on all online spend (excluding transfer of funds to online wallets) and 1% on all other spends. (cashback will be credited back within 45 days of the card statement date)."
         },
         ];
 
@@ -66,6 +84,58 @@ $(function () {
         $('#cardModals').append(cardModal);
         $('#cards-section').append(cardDiv);
     }
+
+    let data = [
+        { 
+            "firstName": "John",
+            "lastName": "Dean",
+            "designation": "CEO & Founder",
+            "image":"ceo1.jpg",
+            "about":"Societas Executive Committee sustinet principalem exsecutivam Group in hodierna administratione HSBC et nostri consilii."
+        },
+        { 
+            "firstName": "David",
+            "lastName": "Nish",
+            "designation": "Architect",
+            "image":"architect1.jpg",
+            "about":"David HSBC adiuncta est ex Regiae Bank Group Scotiae (RBS), ubi designata est Societas Secretarius anno 2010 et recentissime."
+        },
+        { 
+            "firstName": "Mike",
+            "lastName": "Ross",
+            "designation": "Architect",
+            "image":"architect2.jpg",
+            "about":"Mike's publicas institutiones includunt praesidens TheCityUK usque ad diem Maii 2022, sociatus in Consilio Investimenti UK."
+        },
+        { 
+            "firstName": "Dan",
+            "lastName": "Star",
+            "designation": "Architect",
+            "image":"architect3.jpg",
+            "about":"Dan designatus est in Tabula die 1 mensis Maii anno 2016. Magnam experientiam internationalem habet operas oeconomicas."
+        }
+        
+    ];
+
+    data.forEach((author,index) => {
+    // Create child DIVs inside parent DIV.
+    const authorDiv =`<div class="csi-col l3 m6 csi-margin-bottom">
+        <img src="http://flaskawsapp-env-1.eba-xnu9vcjz.us-east-1.elasticbeanstalk.com/get-image/${author.image}}" alt="John" style="width:100%">
+        <h3>${author.firstName} ${author.lastName}</h3>
+        <p class="csi-opacity">${author.designation}</p>
+        <p>${author.about}</p>
+        <p> <a href="#authModal_${index}" rel="modal:open"> Read More.. </a></p>
+        </div>`;
+    
+    const authModal = `<div id="authModal_${index}" class="modal">
+        <p id="cardText">${author.about}</p>
+        <a href="#" rel="modal:close">Close</a>
+    </div>`    
+    
+               $('#authorModals').append(authModal);
+                $('#authors-section').append(authorDiv);
+            });
+
 
      // An Ajax call to get authors as an json file 
     //  $.ajax({
@@ -169,4 +239,3 @@ $(function () {
 
       
 });
-
