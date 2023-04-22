@@ -1,0 +1,31 @@
+[
+    { 
+        "firstName": "John",
+        "lastName": "Dean",
+        "designation": "CEO & Founder",
+        "image":"ceo1.jpg",
+        "about":"Societas Executive Committee sustinet principalem exsecutivam Group in hodierna administratione HSBC et nostri consilii."
+    },
+    { 
+        "firstName": "David",
+        "lastName": "Nish",
+        "designation": "Architect",
+        "image":"architect1.jpg",
+        "about":"David HSBC adiuncta est ex Regiae Bank Group Scotiae (RBS), ubi designata est Societas Secretarius anno 2010 et recentissime."
+    },
+    { 
+        "firstName": "Mike",
+        "lastName": "Ross",
+        "designation": "Architect",
+        "image":"architect2.jpg",
+        "about":"Mike's publicas institutiones includunt praesidens TheCityUK usque ad diem Maii 2022, sociatus in Consilio Investimenti UK."
+    },
+    { 
+        "firstName": "Dan",
+        "lastName": "Star",
+        "designation": "Architect",
+        "image":"architect3.jpg",
+        "about":"Dan designatus est in Tabula die 1 mensis Maii anno 2016. Magnam experientiam internationalem habet operas oeconomicas."
+    }
+    
+]

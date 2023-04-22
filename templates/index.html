@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bank App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='css/index.css') }}" />
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='css/jquery.modal.min.css') }}" />
+    
+
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="csi-top">
+        <div class="csi-bar csi-white csi-wide csi-padding csi-card">
+            <a href="#home" class="csi-bar-item csi-button"><b>Finance</b> Institute</a>
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="csi-right csi-hide-small">
+                <a href="#projects" class="csi-bar-item csi-button">Bank</a>
+                <a href="#portfolio" class="csi-bar-item csi-button">Portfolio</a>
+                <a href="#about" class="csi-bar-item csi-button">About</a>
+                <a href="#contact" class="csi-bar-item csi-button">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="csi-display-container csi-content csi-wide" style="max-width:2000px;" id="home">
+        <img class="csi-image"  src="{{ url_for('static',filename='assets/images/architect.jpg') }}" alt="Architecture" width="2000" height="1300">
+        <div class="csi-display-middle csi-margin-top csi-center">
+            <h1 class="csi-xxlarge csi-text-white"><span class="csi-padding csi-black csi-opacity-min"><b>Financial
+                        Institution</b></span> </h1>
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="csi-content csi-padding" style="max-width:1564px">
+
+        <!-- Bank Section -->
+        <div class="csi-container csi-padding-32" id="projects">
+            <h3 class="csi-border-bottom csi-border-light-grey csi-padding-16">Services</h3>
+        </div>
+
+        <!-- Modal content to show **Cards Details Dynamic Modals** -->
+        <div id="cardModals"></div>
+
+        <!-- Cards Section addded with **XML** data -->
+        <div class="csi-container csi-padding-32" id="cards-section"></div>
+
+        <!-- Portfolio Section addded with **JSON** data -->
+        <div class="csi-container csi-padding-32" id="portfolio">
+            <h3 class="csi-border-bottom csi-border-light-grey csi-padding-16">Portfolio</h3>
+            <ul id="portfolioList" class="main-box">
+            </ul>
+        </div>
+
+        <!-- About Section -->
+        <div class="csi-container csi-padding-24" id="about">
+            <h3 class="csi-border-bottom csi-border-light-grey csi-padding-16">About</h3>
+            <p>Refert emptoris curam, ut eius requisita sequantur, sed simul institutio a
+                rebus oeconomicis sufficientes facultates habeat ad qualitatem muneris
+                clientium praestandam. Nam technologiae technologiae in mundo mutando
+                praecipuam partem habent in tradendis clientibus postulatis.
+            </p>
+        </div>
+
+        <!-- Modal content to show **Author Details Dynamic Modals** -->
+        <div id="authorModals"></div>
+        <!-- Authors Section addded with **JSON** data -->
+        <div class="csi-row-padding csi-grayscale" id="authors-section"></div>
+
+        <!-- Contact Section validated with *Jquery* -->
+        <div class="csi-container csi-padding-16" id="contact">
+            <h3 class="csi-border-bottom csi-border-light-grey csi-padding-16">Contact</h3>
+            <p id="emailFormMsg"></p>
+            <p>Lets get in touch and talk about your business needs.</p>
+            <form id="email_form">
+                <input class="csi-input csi-border" type="text" id="name" placeholder="Name" name="name">
+                <input class="csi-input csi-section csi-border" id="email" type="text" placeholder="Email" name="email">
+                <input class="csi-input csi-section csi-border" id="subject" type="text" placeholder="Subject"
+                    name="subject">
+                <input class="csi-input csi-section csi-border" id="comment" type="text" placeholder="Comment"
+                    name="comment">
+                <button class="csi-button csi-black csi-section submit-btn" type="submit">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </form>
+        </div>
+
+        <!-- Image of location/map -->
+        <div class="csi-container">
+    <img src = "{{ url_for('static',filename='assets/images/map.jpg') }}" class="csi-image" style="width:100%">
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+
+    <footer class="csi-center csi-black csi-padding-16">
+        <p class="csi-small">This website was made for Client Side Internet Resource Subject and images were captured
+            from HSBC Website.!</p>
+        <a class="csi-button csi-round-xxlarge csi-small csi-white csi-margin-bottom"
+            href="https://www.us.hsbc.com/customer-service/contact-us/?lp_offsite=%7B%22type%22%3A0%2C%22campaignId%22%3A3326030030%2C%22engagementId%22%3A3328984030%2C%22contextId%22%3A%22852fb473-8aa8-4330-a6a9-da56f009a15a%22%2C%22accountId%22%3A%2252516473%22%2C%22webView%22%3Afalse%7D"
+            target="_blank">Thanks HSBC</a>
+    </footer>
+
+</body>
+
+<script src= "{{ url_for('static',filename='scripts/jquery.min.js') }}" ></script>
+<script src= "{{ url_for('static',filename='scripts/jquery.validate.min.js') }}" ></script>
+<script src= "{{ url_for('static',filename='scripts/jquery.modal.min.js') }}" ></script>
+<script src= "{{ url_for('static',filename='scripts/script.js') }}" ></script>
+
+
+</html>

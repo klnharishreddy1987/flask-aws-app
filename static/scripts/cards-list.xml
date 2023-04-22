@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<CardsList>
+  <Card>
+      <CardName>HSBC Basic Card</CardName>
+      <CardType>CreditCard</CardType>
+      <CardImage>creditcard1.jpg</CardImage>
+      <CardDesc>Zero Joining Fees, 1.5% cashback on all online spend (excluding transfer of funds to online wallets) and 1% on all other spends. (cashback will be credited back within 45 days of the card statement date).</CardDesc>
+  </Card>
+    <Card>
+      <CardName>HSBC Union Pay</CardName>
+      <CardType>DebitCard</CardType>
+      <CardImage>debitcard1.jpg</CardImage>
+      <CardDesc>Cashback is also available on Instant EMI (Equated Monthly Installment) facility on your card across listed merchants.</CardDesc>
+    </Card>
+    <Card>
+      <CardName>HSBC Travel Card</CardName>
+      <CardType>TravelCard</CardType>
+      <CardImage>travelcard1.jpg</CardImage>
+      <CardDesc>Convenient EMI options that allow you to pay your credit card dues in Equated Monthly Installments (EMIs) such as Balance Transfer on EMI, Cash-on-EMI, Loan-on-Phone etc.</CardDesc>
+  </Card>
+   <Card>
+      <CardName>HSBC Forex Card</CardName>
+      <CardType>ForexCard</CardType>
+      <CardImage>forexcard1.jpg</CardImage>
+      <CardDesc>This card is enabled with VISA Paywave technology that allows contactless payments on your credit card.</CardDesc>
+  </Card>
+</CardsList>
+
+<!-- {
+  [
+  {
+  "CardName" :"HSBC Basic Card",
+  "CardType" ; "CreditCard",
+  "CardImage" : "creditcard1.jpg",
+  "CardDesc" : "Zero Joining Fees, 1.5% cashback on all online spend (excluding transfer of funds to online wallets) and 1% on all other spends. (cashback will be credited back within 45 days of the card statement date)."
+  },
+  ]
+} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
